@@ -1,16 +1,18 @@
 // Funtion to generate HTML for uniqueData, for class propery names and methods of extended parent Employee class
+
+
 const uniqueData = (employee) => {
     role = employee.getRole();
     switch (role){
         case 'Engineer':
             return `Github: <a href="https://github.com/${employee.getGithub()}" target="_blank">${employee.getGithub()}</a>`;
         case 'Manager':
-            return `Office Number: <a href="tel:${employee.getNumber()}" target="_blank">${employee.Number()}</a>`;
+            return `Office Number: ${employee.getNumber()}`;
         case 'Intern':
             return `School:${employee.getSchool()}`;
     };
 };
-
+//function to generate individial employee card with last list item being the unique data for specific role
 const generateCard = (employee) => {
     return `
     <div class="card m-1 shadow" style="width: 18rem;">
@@ -27,7 +29,8 @@ const generateCard = (employee) => {
     `
 }
 
-const renderHTML = (employees) => {
+//
+const generateHTML = (employees) => {
     var cardsString = " ";
 
     for (const employee in employees) {
@@ -42,7 +45,7 @@ const renderHTML = (employees) => {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-            <title>Example Generated Index</title>
+            <title>Team Profile</title>
         </head>
 
         <body>
