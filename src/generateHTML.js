@@ -29,8 +29,9 @@ const generateCard = (employee) => {
     `
 }
 
-//
+//this part generates the team profile html
 const generateHTML = (employees) => {
+    // each generated eomployee card will be added on the html page by putting them in an initial empty string. 
     var cardsString = " ";
 
     for (const employee in employees) {
@@ -66,4 +67,6 @@ const generateHTML = (employees) => {
     `
 }; 
 
+//export generatedHTML file to be later imported to index.js file 
 module.exports = generateHTML;
+
