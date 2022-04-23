@@ -112,7 +112,7 @@ async function inquire(role) {
         case 'Manager':
             questions = questionsManager;
     };
-
+    // after a role is selected by user and questions have been aswered, inquired will then creare the employee onject as well as ask the user for the next choice of action.
     const answers = await inquirer
         .prompt(questions)
         .then((answers) => {
@@ -123,9 +123,10 @@ async function inquire(role) {
 
 // creating employee object depending on employee role and answers from inquirer
 const createEmployeeObj = (role, answers) => {
-    const { name, id, email, officeNumber, github, school } = answers;
-
-    switch (role) {
+    const { name, id, email, officeNumber, github, school } = answers;// unstructuring inquirer reponses into different variables
+    
+    switch (role) { 
+        // rebuilding each type of employee depending on their role and property types 
         case 'Engineer':
             employees.push(new Engineer(name, id, email, github));
             break;
@@ -135,14 +136,14 @@ const createEmployeeObj = (role, answers) => {
         case 'Manager':
             employees.push(new Manager(name, id, email, officeNumber));
     };
-}
+};
 
 // async function to ask user that they want their next action to be
 async function askForNextAction() {
     const answers = await inquirer
         .prompt(nextAction)
         .then((answers) => {
-            // based on the the user's selection, swtich case is used to trigger next action 
+            // based on the the user's selection, switch case is used to trigger next action 
             switch (answers.nextAction) {
                 case 'Add Engineer to my team':
                     role = 'Engineer';
@@ -154,9 +155,9 @@ async function askForNextAction() {
                     break;
                 case 'Finish putting together my team':
                     writeFile(generateHTML(employees))
-            }
-        })
-}
+            };
+        });
+};
 
 // function to write file to build the team profile html page from the generateHTML function
 const writeFile = (data => {
