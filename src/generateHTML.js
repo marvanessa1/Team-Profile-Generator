@@ -9,7 +9,7 @@ const uniqueData = (employee) => {
         case 'Manager':
             return `Office Number: ${employee.getNumber()}`;
         case 'Intern':
-            return `School:${employee.getSchool()}`;
+            return `School: ${employee.getSchool()}`;
     };
 };
 //function to generate individial employee card with last list item being the unique data for specific role

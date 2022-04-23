@@ -3,21 +3,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-# Description
+## Description
 This Node.js command-line application takes responses from user about employees on a software engineering team to generate an HTML webpage that displays summaries of each person.
 
-# Table of Contents
+## Table of Contents
 
 
-   * -[Description](#description)
-    * -[Installation](#installation)
-    * -[Usage](#usage)
-    * -[License](#license)
-    * -[Tests](#tests)
-    * -[Questions](#questions)
+   * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Tests](#tests)
+    * [Questions](#questions)
     
 
-# Installation
+## Installation
 
 This application uses Jest and Inquirer for collecting user input data.  Use the following commands to get the application started:
 
@@ -25,13 +25,18 @@ This application uses Jest and Inquirer for collecting user input data.  Use the
 node index.js
 ```
 
-# Usage
+## Usage
 
 Below are video walkthroughs of the functionality of the Team Profile Generator along with passing tests, and resulting generated HTML file based of the user's input.
 
-# License
+![Team Profile Generator Walkthrough](https://drive.google.com/file/d/1eHgUskMQ_fNfzEfn-7vHMwwVek3uFSZP/view)
+
+![Team Profile Generator Generated HTML Screenshot](./images/screenshot.png)
+
+## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
     in the Software without restriction, including without limitation the rights
@@ -54,7 +59,7 @@ Below are video walkthroughs of the functionality of the Team Profile Generator 
 
 
 
-# Tests
+## Tests
 
 To run test run the following command:
 
@@ -62,7 +67,7 @@ To run test run the following command:
 npm run test
 ```
 
-# Questions
+## Questions
 
 
   If you have any questions, email [marvanessa1@live.com](mailto:marvanessa1@live.com).
