@@ -33,9 +33,9 @@ describe('Engineer', () => {
             const id = 1;
 
             const employee = new Engineer ('Gollum', 1, 'myPrecious@theFellowship', 'SmeagolOrGollum');
-            const getIdMethod = employee.getId()
+            const getIDMethod = employee.getID()
 
-            expect(getIdMethod).toEqual(id);
+            expect(getIDMethod).toEqual(id);
         });
     })
     describe('getEmail', () =>{
