@@ -10,11 +10,11 @@ This Node.js command-line application takes responses from user about employees 
 
 
    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Tests](#tests)
-    * [Questions](#questions)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Tests](#tests)
+    - [Questions](#questions)
     
 
 ## Installation
@@ -29,7 +29,7 @@ node index.js
 
 Below are video walkthroughs of the functionality of the Team Profile Generator along with passing tests, and resulting generated HTML file based of the user's input.
 
-![Team Profile Generator Walkthrough](https://drive.google.com/file/d/1eHgUskMQ_fNfzEfn-7vHMwwVek3uFSZP/view)
+[Team Profile Generator Video Walkthrough](https://drive.google.com/file/d/1eHgUskMQ_fNfzEfn-7vHMwwVek3uFSZP/view)
 
 ![Team Profile Generator Generated HTML Screenshot](./images/screenshot.png)
 
