@@ -86,9 +86,9 @@ const questionsIntern = [
 // Question for user to select their next action.  Selecting either "add engineer" or "add intern" will prompt user to enter enginner and intern answers
 const nextAction = [
     {
-        type:"list",
+        type: "list",
         message: "What would you like to do next?",
-        choices:[
+        choices: [
             "Add Engineer to my team",
             "Add an Intern to my team",
             "Finish putting together my team"
@@ -101,7 +101,7 @@ const nextAction = [
 const init = (role) => inquire(role);
 
 // switch is used instead of multiple if else statements. Since all employee questions have the same type "input", switch  can be used since it uses strict comparisons (===)
-async function inquire (role) {
+async function inquire(role) {
     switch (role) {
         case 'Engineer':
             questions = questionsEngineer;
@@ -115,33 +115,33 @@ async function inquire (role) {
 
     const answers = await inquirer
         .prompt(questions)
-        .then((answers)=> {
-            createEmployeeObj (role, answers);
+        .then((answers) => {
+            createEmployeeObj(role, answers);
             askForNextAction();
         });
 };
 
 // creating employee object depending on employee role and answers from inquirer
 const createEmployeeObj = (role, answers) => {
-    const {name, id, email, officeNumber, github, school} = answers;
+    const { name, id, email, officeNumber, github, school } = answers;
 
     switch (role) {
         case 'Engineer':
-            employees.push(new Engineer (name, id, email, github));
+            employees.push(new Engineer(name, id, email, github));
             break;
         case 'Intern':
-            employees.push(new Intern (name, id, email, school));
+            employees.push(new Intern(name, id, email, school));
             break;
         case 'Manager':
-            employees.push(new Manager (name, id, email, officeNumber));
+            employees.push(new Manager(name, id, email, officeNumber));
     };
 }
 
 // async function to ask user that they want their next action to be
-async function askForNextAction () {
+async function askForNextAction() {
     const answers = await inquirer
         .prompt(nextAction)
-        .then((answers) =>{
+        .then((answers) => {
             // based on the the user's selection, swtich case is used to trigger next action 
             switch (answers.nextAction) {
                 case 'Add Engineer to my team':
@@ -162,7 +162,7 @@ async function askForNextAction () {
 const writeFile = (data => {
     // data to be written in file names index.html inside dist folder
     fs.writeFile("./dist/index.html", data, (err) =>
-    err? console.error(err) :console.log("Your team html was successfully created!")
+        err ? console.error(err) : console.log("Your team html was successfully created!")
     );
 })
 
