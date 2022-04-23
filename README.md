@@ -9,12 +9,12 @@ This Node.js command-line application takes responses from user about employees 
 # Table of Contents
 
 
-    -[Description](#Description)
-    -[Installation](#Installation)
-    -[Usage](#Usage)
-    -[License](#License)
-    -[Tests](#Tests)
-    -[Questions](#Questions)
+   * -[Description](#description)
+    * -[Installation](#installation)
+    * -[Usage](#usage)
+    * -[License](#license)
+    * -[Tests](#tests)
+    * -[Questions](#questions)
     
 
 # Installation
