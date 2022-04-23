@@ -7,9 +7,7 @@
 This Node.js command-line application takes responses from user about employees on a software engineering team to generate an HTML webpage that displays summaries of each person.
 
 ## Table of Contents
-
-
-   * [Description](#description)
+- [Description](#description)
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
@@ -70,7 +68,7 @@ npm run test
 ## Questions
 
 
-  If you have any questions, email [marvanessa1@live.com](mailto:marvanessa1@live.com).
+  If you have any questions, email [marvanessa1@live.com](mailto:marvanessa1@live.com)
 
-  My GitHub user is [marvanessa1](https://github.com/marvanessa1)
+  My GitHub is [marvanessa1](https://github.com/marvanessa1)
   
